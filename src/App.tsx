@@ -54,7 +54,8 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <div className='product-image' ref={productImageRef}>
-        <img ref={imageRef} style={{ height : '300px', width : `${300 * aspectRatio}px` }}></img>
+        {/* <img ref={imageRef} style={{ height : '300px', width : `${300 * aspectRatio}px` }}></img> */}
+        <img ref={imageRef} style={{ height : `${400 / aspectRatio}px`, width : `400px` }}></img>
         <PaletteDisplay palette={currentPalette}></PaletteDisplay>
       </div>
       <input type="file" accept="image/*" onChange={onChange}></input>
